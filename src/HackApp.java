@@ -281,6 +281,7 @@ public class HackApp {
 								frame.remove(entry4);
 								frame.remove(entry5);
 								frame.remove(entry6);
+								frame.remove(image);
 								frame.repaint();
 								
 							
