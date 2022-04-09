@@ -3,10 +3,11 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 
 public class HackApp {
 
@@ -34,6 +35,14 @@ public class HackApp {
 		frame.add(entry2);
 		entry2.setSize(1000, 60);
 		entry2.setLocation(400, 250);
+		
+		ImageIcon pic = new ImageIcon("Images/access.jpg");
+		JLabel image = new JLabel(pic);
+		frame.add(image);
+		
+			image.setSize(207, 173);
+			image.setLocation(100, 375);
+		
 
 		JButton buttonOne = new JButton("Next");
 		frame.add(buttonOne);
@@ -49,6 +58,7 @@ public class HackApp {
 				frame.remove(entry);
 				frame.remove(entry3);
 				frame.remove(entry2);
+				frame.remove(image);
 				frame.repaint();
 
 				// After clicking next
@@ -73,6 +83,11 @@ public class HackApp {
 				frame.add(buttonSources);
 				buttonSources.setSize(100, 50);
 				buttonSources.setLocation(400, 450);
+				
+				JButton help = new JButton("<html> Professional <br/> Help</html>");
+				frame.add(help);
+				help.setSize(100, 50);
+				help.setLocation(510, 450);
 
 				JButton buttonptsd = new JButton("PTSD");
 				frame.add(buttonptsd);
@@ -90,6 +105,7 @@ public class HackApp {
 						frame.remove(buttonptsd);
 						frame.remove(instructions);
 						frame.remove(buttonSources);
+						frame.remove(help);
 						buttonOne.setText("Back");
 						
 						buttonOne.addMouseListener(new MouseListener(){
@@ -140,6 +156,7 @@ public class HackApp {
 						frame.remove(buttonptsd);
 						frame.remove(instructions);
 						frame.remove(buttonSources);
+						frame.remove(help);
 						buttonOne.setText("Back");
 
 						JLabel entry = new JLabel("Attention deficit hyperactivity disorder");
@@ -147,22 +164,26 @@ public class HackApp {
 						frame.add(entry);
 						entry.setSize(500, 60);
 						entry.setLocation(250, 1);
+						entry.setForeground(Color.RED);
 						JLabel entry2 = new JLabel("Symptoms of ADHD:");
 						entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry2);
 						entry2.setSize(400, 60);
 						entry2.setLocation(1, 40);
+						entry2.setForeground(Color.RED);
 						JLabel entry3 = new JLabel(
 								"<html>The primary features of ADHD include inattention and hyperactive-impulsive behavior. ADHD symptoms start<br/>before age 12, and in some children, they're noticeable as early as 3 years of age. ADHD symptoms can be mild,<br/>moderate or severe, and they may continue into adulthood. ADHD occurs more often in males than in females,<br/> and behaviors can be different in boys and girls.</html>");
 						entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry3);
 						entry3.setSize(10000, 100);
 						entry3.setLocation(1, 75);
+						entry3.setForeground(Color.RED);
 						JLabel entry4 = new JLabel(
 								"<html>There are three subtypes of ADHD.<br/>* Predominantly inattentive: The majority of symptoms fall under inattention.<br/>* Predominantly hyperactive/impulsive. The majority of symptoms are hyperactive and impulsive.<br/>* Combined. This is a mix of inattentive symptoms and hyperactive/impulsive symptoms.</html>");
 						entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry4);
 						entry4.setSize(10000, 100);
+						entry4.setForeground(Color.RED);
 						entry4.setLocation(1, 200);
 
 						JLabel entry5 = new JLabel(
@@ -171,6 +192,7 @@ public class HackApp {
 						frame.add(entry5);
 						entry5.setSize(10000, 100);
 						entry5.setLocation(1, 325);
+						entry5.setForeground(Color.RED);
 
 						
 
@@ -180,7 +202,11 @@ public class HackApp {
 						entry6.setSize(10000, 100);
 						entry6.setLocation(1, 500);
 						
-						
+						ImageIcon pic = new ImageIcon("Images/adhd.jpg");
+						JLabel image = new JLabel(pic);
+						frame.add(image);
+						image.setSize(10, 10);
+						image.setLocation(200, 450);
 					
 						buttonOne.addMouseListener(new MouseListener(){
 
@@ -195,6 +221,7 @@ public class HackApp {
 								frame.remove(entry4);
 								frame.remove(entry5);
 								frame.remove(entry6);
+								frame.remove(image);
 								frame.repaint();
 								
 							}
@@ -237,8 +264,15 @@ public class HackApp {
 						frame.remove(buttonThree);
 						frame.remove(buttonptsd);
 						frame.remove(instructions);
+						frame.remove(help);
 						frame.remove(buttonSources);
 						buttonOne.setText("Back");
+						
+						ImageIcon pic = new ImageIcon("Images/autism.jpg");
+						JLabel image = new JLabel(pic);
+						frame.add(image);
+						image.setSize(100, 100);
+						image.setLocation(750, 450);
 						
 						buttonOne.addMouseListener(new MouseListener(){
 
@@ -247,7 +281,7 @@ public class HackApp {
 
 							@Override
 							public void mousePressed(MouseEvent e) {
-								
+								frame.remove(image);
 								frame.repaint();
 								
 							}
@@ -278,6 +312,68 @@ public class HackApp {
 
 				});
 
+				help.addMouseListener(new MouseListener() {
+
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						// TODO Auto-generated method stub
+						
+					}
+
+					@Override
+					public void mousePressed(MouseEvent e) {
+						// TODO Auto-generated method stub
+						frame.remove(buttonadhd);
+						frame.remove(buttonThree);
+						frame.remove(buttonptsd);
+						frame.remove(instructions);
+						frame.remove(buttonSources);
+						frame.remove(help);
+						buttonOne.setText("Back");
+						buttonOne.addMouseListener(new MouseListener(){
+
+							@Override
+							public void mouseClicked(MouseEvent e) {}
+
+							@Override
+							public void mousePressed(MouseEvent e) {
+								frame.repaint();
+								
+							}
+
+							@Override
+							public void mouseReleased(MouseEvent e) {}
+
+							@Override
+							public void mouseEntered(MouseEvent e) {}
+
+							@Override
+							public void mouseExited(MouseEvent e) {}
+						
+						});
+						frame.repaint();
+					}
+
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						// TODO Auto-generated method stub
+						
+					}
+
+					@Override
+					public void mouseEntered(MouseEvent e) {
+						// TODO Auto-generated method stub
+						
+					}
+
+					@Override
+					public void mouseExited(MouseEvent e) {
+						// TODO Auto-generated method stub
+						
+					}
+				
+				});
+				
 				buttonSources.addMouseListener(new MouseListener() {
 
 					@Override
@@ -289,6 +385,7 @@ public class HackApp {
 						frame.remove(buttonThree);
 						frame.remove(buttonptsd);
 						frame.remove(instructions);
+						frame.remove(help);
 						frame.remove(buttonSources);
 
 						JLabel entry6 = new JLabel(
@@ -336,6 +433,8 @@ public class HackApp {
 					public void mouseExited(MouseEvent e) {}
 
 				});
+				
+				
 			}
 
 			@Override
