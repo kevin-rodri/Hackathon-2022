@@ -209,6 +209,44 @@ public class HackApp {
 							frame.remove(instructions);
 							buttonOne.setText("Back");
 								frame.repaint();
+								JLabel entry = new JLabel("Autism");
+								entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
+								frame.add(entry);
+								entry.setSize(500, 60);
+								entry.setLocation(350,1);
+								JLabel entry2 = new JLabel("What is Autism:");
+								entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry2);
+								entry2.setSize(400, 60);
+								entry2.setLocation(1,40);
+								JLabel entry3 = new JLabel("<html>Autism, or autism spectrum disorder (ASD), refers to a broad range of conditions characterized by<br/>challenges with social skills, repetitive behaviors, speech and nonverbal communication.<br/>According to the Centers for Disease Control, autism affects an estimated 1 in 44 children in the United States today.</html>");
+								entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry3);
+								entry3.setSize(10000, 100);
+								entry3.setLocation(1,75);
+								JLabel entry4 = new JLabel("Symptoms of Autism:");
+								entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry4);
+								entry4.setSize(10000, 100);
+								entry4.setLocation(1,170);
+								JLabel entry6 = new JLabel("<html>* A lack of eye contact<br/>* A narrow range of interests or intense interest in certain topics<br/>* High sensitivity to sounds, touches, smells, or sights that seem ordinary to other people<br/>* Not looking at or listening to other people.<br/>* Not looking at things when another person points at them.</html>");
+								entry6.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry6);
+								entry6.setSize(10000, 100);
+								entry6.setLocation(1,245);
+								
+								
+								JLabel entry5 = new JLabel("<html>How do you help people with Autism:<br/><br/>* Build on your child's interests.<br/>* Offer a predictable schedule.<br/>* Teach tasks as a series of simple steps.<br/>* Actively engage your child's attention in highly structured activities.<br/>* Provide regular reinforcement of behavior.</html>");
+								entry5.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry5);
+								entry5.setSize(10000, 130);
+								entry5.setLocation(1,375);
+								
+								JLabel entry7 = new JLabel(" ");
+								entry7.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry7);
+								entry7.setSize(10000, 100);
+								entry7.setLocation(1,500);
 							
 						}
 
