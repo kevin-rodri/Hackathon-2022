@@ -140,13 +140,13 @@ public class HackApp {
 								JLabel entry = new JLabel("Attention deficit hyperactivity disorder");
 								entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
 								frame.add(entry);
-								entry.setSize(400, 60);
-								entry.setLocation(1,1);
+								entry.setSize(500, 60);
+								entry.setLocation(250,1);
 								JLabel entry2 = new JLabel("Symptoms of ADHD:");
-								entry2.setFont(new Font("Times New Roman", Font.BOLD, 20));
+								entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
 								frame.add(entry2);
 								entry2.setSize(400, 60);
-								entry2.setLocation(300,40);
+								entry2.setLocation(1,40);
 								JLabel entry3 = new JLabel("<html>The primary features of ADHD include inattention and hyperactive-impulsive behavior. ADHD symptoms start<br/>before age 12, and in some children, they're noticeable as early as 3 years of age. ADHD symptoms can be mild,<br/>moderate or severe, and they may continue into adulthood. ADHD occurs more often in males than in females,<br/> and behaviors can be different in boys and girls.</html>");
 								entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
 								frame.add(entry3);
@@ -164,12 +164,12 @@ public class HackApp {
 								entry5.setSize(10000, 100);
 								entry5.setLocation(1,325);
 								
-								JLabel entry6 = new JLabel("<html>Sources: https://www.healthline.com/health/adhd/dating-someone-with-adhd<br/>https://www.mayoclinic.org/diseases-conditions/adhd/symptoms-causes/<html>");
+								JLabel entry6 = new JLabel(" ");
 								entry6.setFont(new Font("Times New Roman", Font.BOLD, 15));
 								frame.add(entry6);
 								entry6.setSize(10000, 100);
-								entry6.setLocation(1,425);
-							
+								entry6.setLocation(1,500);
+								
 						}
 
 						@Override
