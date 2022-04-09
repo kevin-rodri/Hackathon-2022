@@ -132,6 +132,38 @@ public class HackApp {
 								frame.remove(buttonThree);
 								frame.remove(buttonptsd);
 								frame.repaint();
+								JLabel entry = new JLabel("Attention deficit hyperactivity disorder");
+								entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
+								frame.add(entry);
+								entry.setSize(400, 60);
+								entry.setLocation(1,1);
+								JLabel entry2 = new JLabel("Symptoms of ADHD:");
+								entry2.setFont(new Font("Times New Roman", Font.BOLD, 20));
+								frame.add(entry2);
+								entry2.setSize(400, 60);
+								entry2.setLocation(300,40);
+								JLabel entry3 = new JLabel("<html>The primary features of ADHD include inattention and hyperactive-impulsive behavior. ADHD symptoms start<br/>before age 12, and in some children, they're noticeable as early as 3 years of age. ADHD symptoms can be mild,<br/>moderate or severe, and they may continue into adulthood. ADHD occurs more often in males than in females,<br/> and behaviors can be different in boys and girls.</html>");
+								entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry3);
+								entry3.setSize(10000, 100);
+								entry3.setLocation(1,75);
+								JLabel entry4 = new JLabel("<html>There are three subtypes of ADHD.<br/>* Predominantly inattentive: The majority of symptoms fall under inattention.<br/>* Predominantly hyperactive/impulsive. The majority of symptoms are hyperactive and impulsive.<br/>* Combined. This is a mix of inattentive symptoms and hyperactive/impulsive symptoms.</html>");
+								entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry4);
+								entry4.setSize(10000, 100);
+								entry4.setLocation(1,200);
+								
+								JLabel entry5 = new JLabel("<html>How do you help people with ADHD.<br/>* Understand the potential impairments of ADHD.<br/>* Acknowledge the impact ADHD has on you.<br/>* Assess your loved one’s readiness to change.<br/>* Know the best treatments for ADHD</html>");
+								entry5.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry5);
+								entry5.setSize(10000, 100);
+								entry5.setLocation(1,325);
+								
+								JLabel entry6 = new JLabel("<html>Sources: https://www.healthline.com/health/adhd/dating-someone-with-adhd<br/>https://www.mayoclinic.org/diseases-conditions/adhd/symptoms-causes/<html>");
+								entry6.setFont(new Font("Times New Roman", Font.BOLD, 15));
+								frame.add(entry6);
+								entry6.setSize(10000, 100);
+								entry6.setLocation(1,425);
 							
 						}
 
