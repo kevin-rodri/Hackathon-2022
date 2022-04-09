@@ -84,7 +84,7 @@ public class HackApp {
 				buttonSources.setSize(100, 50);
 				buttonSources.setLocation(400, 450);
 				
-				JButton help = new JButton("<html> Professional <br/> Help</html>");
+				JButton help = new JButton("Resources");
 				frame.add(help);
 				help.setSize(100, 50);
 				help.setLocation(510, 450);
@@ -214,26 +214,22 @@ public class HackApp {
 						frame.add(entry);
 						entry.setSize(500, 60);
 						entry.setLocation(250, 1);
-						entry.setForeground(Color.RED);
 						JLabel entry2 = new JLabel("Symptoms of ADHD:");
 						entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry2);
 						entry2.setSize(400, 60);
 						entry2.setLocation(1, 40);
-						entry2.setForeground(Color.RED);
 						JLabel entry3 = new JLabel(
 								"<html>The primary features of ADHD include inattention and hyperactive-impulsive behavior. ADHD symptoms start<br/>before age 12, and in some children, they're noticeable as early as 3 years of age. ADHD symptoms can be mild,<br/>moderate or severe, and they may continue into adulthood. ADHD occurs more often in males than in females,<br/> and behaviors can be different in boys and girls.</html>");
 						entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry3);
 						entry3.setSize(10000, 100);
 						entry3.setLocation(1, 75);
-						entry3.setForeground(Color.RED);
 						JLabel entry4 = new JLabel(
 								"<html>There are three subtypes of ADHD.<br/><br/>* Predominantly inattentive. The majority of symptoms fall under inattention.<br/>* Predominantly hyperactive/impulsive. The majority of symptoms are hyperactive and impulsive.<br/>* Combined. This is a mix of inattentive symptoms and hyperactive/impulsive symptoms.</html>");
 						entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry4);
 						entry4.setSize(10000, 100);
-						entry4.setForeground(Color.RED);
 						entry4.setLocation(1, 200);
 
 						JLabel entry5 = new JLabel(
@@ -242,7 +238,7 @@ public class HackApp {
 						frame.add(entry5);
 						entry5.setSize(10000, 100);
 						entry5.setLocation(1, 325);
-						entry5.setForeground(Color.RED);
+						
 
 						
 
@@ -252,11 +248,6 @@ public class HackApp {
 						entry6.setSize(10000, 100);
 						entry6.setLocation(1, 500);
 						
-						ImageIcon pic = new ImageIcon("Images/adhd.jpg");
-						JLabel image = new JLabel(pic);
-						frame.add(image);
-						image.setSize(10, 10);
-						image.setLocation(200, 450);
 					
 						buttonOne.addMouseListener(new MouseListener(){
 
@@ -271,7 +262,6 @@ public class HackApp {
 								frame.remove(entry4);
 								frame.remove(entry5);
 								frame.remove(entry6);
-								frame.remove(image);
 								frame.repaint();
 								
 							
@@ -383,7 +373,7 @@ public class HackApp {
 								frame.remove(entry5);
 								frame.remove(entry6);
 								frame.remove(entry7);
-
+								
 								frame.repaint();
 								
 							}
@@ -432,6 +422,43 @@ public class HackApp {
 						frame.remove(buttonSources);
 						frame.remove(help);
 						buttonOne.setText("Back");
+						
+						JLabel entry = new JLabel("Resources");
+						entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
+						frame.add(entry);
+						entry.setSize(500, 60);
+						entry.setLocation(350,1);
+						JLabel entry2 = new JLabel("Resources you can use for ADHD:");
+						entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry2);
+						entry2.setSize(400, 60);
+						entry2.setLocation(1,40);
+						
+						JLabel entry10 = new JLabel("<html>* A psychologist, a psychiatrist, or a neurologist is best equipped to diagnose ADHD in adults. A master level therapist is<br/>recommended only for the initial screening.<br/>* Only a psychiatrist, neurologist, or family physician can prescribe medication for adults with ADHD.<br/>* If you need counseling, choose a psychologist or master level therapist. A psychiatrist is a good choice, depending on his<br/>or her ability to provide counseling that helps solve problems. </html>");
+						entry10.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry10);
+						entry10.setSize(10000, 100);
+						entry10.setLocation(1,90);
+						
+						JLabel entry11 = new JLabel("<html> Resources for Autism: <br/><br/>* Asperger/Autism Network: The Asperger/Autism Network (AANE) provides individuals, families, and professionals<br/>with information, education, community, support, and advocacy.<br/>* Autism Highway: Started by a woman whose son was diagnosed with autism, Autism Highway is both informative and<br/>fun. The website is easy to navigate and it provides an extensive list of autism-related events and specialists.<br/>In addition, Autism Highway includes interactive games for kids.</html>");
+						entry11.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry11);
+						entry11.setSize(10000, 200);
+						entry11.setLocation(1,175);
+						
+						JLabel entry12 = new JLabel("<html> Resources for PTSD: <br/><br/>* American Academy of Child and Adolescent Psychiatry: The AACAP is the leading national professional medical<br/>association dedicated to treating and improving the quality of life for children, adolescents, and families affected by<br/>mental, behavioral, or developmental disorders<br/>* American Academy of Experts in Traumatic Stress: The American Academy of Experts in Traumatic Stress is a<br/>network of professionals committed to the advancement of intervention for survivors of trauma.</html>");
+						entry12.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry12);
+						entry12.setSize(10000, 200);
+						entry12.setLocation(1,325);
+						
+						
+						JLabel entry7 = new JLabel(" ");
+						entry7.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry7);
+						entry7.setSize(10000, 100);
+						entry7.setLocation(1,500);
+						
 						buttonOne.addMouseListener(new MouseListener(){
 
 							@Override
@@ -439,6 +466,12 @@ public class HackApp {
 
 							@Override
 							public void mousePressed(MouseEvent e) {
+								frame.remove(entry);
+								frame.remove(entry2);
+								frame.remove(entry10);
+								frame.remove(entry11);
+								frame.remove(entry12);
+								frame.remove(entry7);
 								frame.repaint();
 								
 							}
