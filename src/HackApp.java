@@ -17,13 +17,7 @@ public class HackApp {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		/*
-		//https://stackoverflow.com/questions/21357286/adding-a-editable-text-box-to-a-jframe 
-		JTextField text = new JTextField();
-		frame.add(text);
-		text.setSize(200, 50);
-		text.setLocation(375, 200);
-		*/
+		
 		
 		JLabel entry = new JLabel("Welcome to our app");
 		entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
@@ -63,7 +57,14 @@ public class HackApp {
 					frame.repaint();
 					
 					
+					
 					// After clicking next 
+					JLabel instructions = new JLabel("<html>Click on either of the three buttons to learn more about them. Once you are finished you can pressed the back button if you <br/> want to learn more!</html>");
+					instructions.setFont(new Font("Times New Roman", Font.BOLD, 14));
+					frame.add(instructions);
+					instructions.setSize(1000,100);
+					instructions.setLocation(5,200);
+					
 					JButton buttonadhd = new JButton("ADHD");
 					frame.add(buttonadhd);
 					buttonadhd.setSize(100,50);
@@ -93,6 +94,7 @@ public class HackApp {
 							frame.remove(buttonadhd);
 							frame.remove(buttonThree);
 							frame.remove(buttonptsd);
+							frame.remove(instructions);
 							buttonOne.setText("Back");
 								frame.repaint();
 							
@@ -132,6 +134,7 @@ public class HackApp {
 								frame.remove(buttonadhd);
 								frame.remove(buttonThree);
 								frame.remove(buttonptsd);
+								frame.remove(instructions);
 								buttonOne.setText("Back");
 								frame.repaint();
 							
@@ -171,6 +174,7 @@ public class HackApp {
 							frame.remove(buttonadhd);
 							frame.remove(buttonThree);
 							frame.remove(buttonptsd);
+							frame.remove(instructions);
 							buttonOne.setText("Back");
 								frame.repaint();
 							
