@@ -46,7 +46,7 @@ public class HackApp {
 		JButton buttonOne = new JButton("Next");
 		frame.add(buttonOne);
 		buttonOne.setSize(50,50);
-		buttonOne.setLocation(675, 475);
+		buttonOne.setLocation(650, 475);
 		buttonOne.addMouseListener(new MouseListener() {
 
 			@Override
@@ -61,6 +61,138 @@ public class HackApp {
 					frame.remove(entry3);
 					frame.remove(entry2);
 					frame.repaint();
+					
+					
+					// After clicking next 
+					JButton buttonadhd = new JButton("ADHD");
+					frame.add(buttonadhd);
+					buttonadhd.setSize(100,50);
+					buttonadhd.setLocation(100, 450);
+					
+					
+					JButton buttonThree = new JButton("Autism");
+					frame.add(buttonThree);
+					buttonThree.setSize(100,50);
+					buttonThree.setLocation(250, 450);
+					
+					
+					JButton buttonptsd = new JButton("PTSD");
+					frame.add(buttonptsd);
+					buttonptsd.setSize(100,50);
+					buttonptsd.setLocation(400, 450);
+					buttonptsd.addMouseListener(new MouseListener() {
+
+						@Override
+						public void mouseClicked(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mousePressed(MouseEvent e) {
+							frame.remove(buttonadhd);
+							frame.remove(buttonThree);
+							frame.remove(buttonptsd);
+								frame.repaint();
+							
+						}
+
+						@Override
+						public void mouseReleased(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mouseEntered(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mouseExited(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+					
+					});
+					
+
+					buttonadhd.addMouseListener(new MouseListener() {
+
+						@Override
+						public void mouseClicked(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mousePressed(MouseEvent e) {
+								frame.remove(buttonadhd);
+								frame.remove(buttonThree);
+								frame.remove(buttonptsd);
+								frame.repaint();
+							
+						}
+
+						@Override
+						public void mouseReleased(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mouseEntered(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mouseExited(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+					
+					});
+				
+
+					buttonThree.addMouseListener(new MouseListener() {
+
+						@Override
+						public void mouseClicked(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mousePressed(MouseEvent e) {
+							frame.remove(buttonadhd);
+							frame.remove(buttonThree);
+							frame.remove(buttonptsd);
+								frame.repaint();
+							
+						}
+
+						@Override
+						public void mouseReleased(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mouseEntered(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void mouseExited(MouseEvent e) {
+							// TODO Auto-generated method stub
+							
+						}
+					
+					});
+
 				
 			}
 
@@ -86,37 +218,8 @@ public class HackApp {
 		
 	
 		
-		/*
-		JButton buttonTwo = new JButton("Option Two");
-		frame.add(buttonTwo);
-		buttonTwo.setSize(100,50);
-		buttonTwo.setLocation(250, 450);
 		
 		
-		JButton buttonThree = new JButton("Option Three");
-		frame.add(buttonThree);
-		buttonThree.setSize(100,50);
-		buttonThree.setLocation(400, 450);
-		*/
-
-	
-//		JButton buttonOne = new JButton("Option One");
-//		frame.add(buttonOne);
-//		buttonOne.setSize(100,50);
-//		buttonOne.setLocation(100, 450);
-//		
-//		JButton buttonTwo = new JButton("Option Two");
-//		frame.add(buttonTwo);
-//		buttonTwo.setSize(100,50);
-//		buttonTwo.setLocation(250, 450);
-//		
-//		
-//		JButton buttonThree = new JButton("Option Three");
-//		frame.add(buttonThree);
-//		buttonThree.setSize(100,50);
-//		buttonThree.setLocation(400, 450);
-		
-
 	}
 
 	
