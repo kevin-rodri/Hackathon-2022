@@ -17,29 +17,30 @@ public class HackApp {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		JLabel entry = new JLabel("Welcome to our app");
+		JLabel entry = new JLabel("Welcome!");
 		entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		frame.add(entry);
-		entry.setSize(200, 60);
-		entry.setLocation(325, 150);
+		entry.setSize(200, 30);
+		entry.setLocation(325, 170);
 
-		JLabel entry3 = new JLabel("Information about this app:");
-		entry3.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		JLabel entry3 = new JLabel("Information About This App:");
+		entry3.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		frame.add(entry3);
 		entry3.setSize(255, 60);
-		entry3.setLocation(290, 200);
+		entry3.setLocation(290, 210);
 
+		//https://docs.oracle.com/javase/tutorial/uiswing/components/html.html (line 34)
 		JLabel entry2 = new JLabel(
 				"<html>This app is made to educate people about some of the disabilities that people live with everyday. 1 out of 4 people in United States of America have a disability. It is important to learn about disability so we can gain knowledge about how we can help people with disability. This app aims to spread information about this topic.<br/> To learn more about disabilities, click the next button.</html>");
 		entry2.setFont(new Font("Times New Roman", Font.BOLD, 14));
 		frame.add(entry2);
 		entry2.setSize(1000, 60);
-		entry2.setLocation(400, 250);
+		entry2.setLocation(400, 300);
 		
+		// https://stackoverflow.com/questions/6673833/using-an-imageicon-and-a-jlabel (lines 40-45)
 		ImageIcon pic = new ImageIcon("Images/access.jpg");
 		JLabel image = new JLabel(pic);
 		frame.add(image);
-		
 			image.setSize(207, 173);
 			image.setLocation(100, 375);
 		
@@ -105,7 +106,6 @@ public class HackApp {
 						frame.remove(buttonptsd);
 						frame.remove(instructions);
 						frame.remove(buttonSources);
-
 						frame.remove(help);
 
 						JLabel entry = new JLabel("Post-traumatic stress disorder");
@@ -151,6 +151,13 @@ public class HackApp {
 
 						buttonOne.setText("Back");
 						
+						ImageIcon pic = new ImageIcon("Images/ptsd.png");
+						JLabel image = new JLabel(pic);
+						frame.add(image);
+						image.setSize(204, 204);
+						image.setLocation(350, 300);
+
+						
 						buttonOne.addMouseListener(new MouseListener(){
 
 							@Override
@@ -165,6 +172,7 @@ public class HackApp {
 								frame.remove(entry5);
 								frame.remove(entry6);
 								frame.remove(entry7);
+								frame.remove(image);
 								frame.repaint();
 								
 							}
@@ -209,31 +217,30 @@ public class HackApp {
 						frame.remove(help);
 						buttonOne.setText("Back");
 
-						JLabel entry = new JLabel("Attention deficit hyperactivity disorder");
+						JLabel entry = new JLabel("Attention Deficit Hyperactivity Disorder");
 						entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
 						frame.add(entry);
 						entry.setSize(500, 60);
 						entry.setLocation(250, 1);
-						entry.setForeground(Color.RED);
+	
 						JLabel entry2 = new JLabel("Symptoms of ADHD:");
 						entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry2);
 						entry2.setSize(400, 60);
 						entry2.setLocation(1, 40);
-						entry2.setForeground(Color.RED);
+				
 						JLabel entry3 = new JLabel(
 								"<html>The primary features of ADHD include inattention and hyperactive-impulsive behavior. ADHD symptoms start<br/>before age 12, and in some children, they're noticeable as early as 3 years of age. ADHD symptoms can be mild,<br/>moderate or severe, and they may continue into adulthood. ADHD occurs more often in males than in females,<br/> and behaviors can be different in boys and girls.</html>");
 						entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry3);
 						entry3.setSize(10000, 100);
 						entry3.setLocation(1, 75);
-						entry3.setForeground(Color.RED);
+						
 						JLabel entry4 = new JLabel(
 								"<html>There are three subtypes of ADHD.<br/><br/>* Predominantly inattentive. The majority of symptoms fall under inattention.<br/>* Predominantly hyperactive/impulsive. The majority of symptoms are hyperactive and impulsive.<br/>* Combined. This is a mix of inattentive symptoms and hyperactive/impulsive symptoms.</html>");
 						entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry4);
 						entry4.setSize(10000, 100);
-						entry4.setForeground(Color.RED);
 						entry4.setLocation(1, 200);
 
 						JLabel entry5 = new JLabel(
@@ -242,7 +249,7 @@ public class HackApp {
 						frame.add(entry5);
 						entry5.setSize(10000, 100);
 						entry5.setLocation(1, 325);
-						entry5.setForeground(Color.RED);
+						
 
 						
 
@@ -252,11 +259,11 @@ public class HackApp {
 						entry6.setSize(10000, 100);
 						entry6.setLocation(1, 500);
 						
-						ImageIcon pic = new ImageIcon("Images/adhd.jpg");
+						ImageIcon pic = new ImageIcon("Images/ahd.jpg");
 						JLabel image = new JLabel(pic);
 						frame.add(image);
-						image.setSize(10, 10);
-						image.setLocation(200, 450);
+						image.setSize(158, 170);
+						image.setLocation(500, 300);
 					
 						buttonOne.addMouseListener(new MouseListener(){
 
@@ -325,7 +332,7 @@ public class HackApp {
 						JLabel image = new JLabel(pic);
 						frame.add(image);
 						image.setSize(100, 100);
-						image.setLocation(750, 450);
+						image.setLocation(650, 350);
 
 						JLabel entry = new JLabel("Autism");
 						entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
@@ -432,6 +439,10 @@ public class HackApp {
 						frame.remove(buttonSources);
 						frame.remove(help);
 						buttonOne.setText("Back");
+						
+
+						
+						
 						buttonOne.addMouseListener(new MouseListener(){
 
 							@Override
