@@ -90,6 +90,46 @@ public class HackApp {
 						frame.remove(buttonptsd);
 						frame.remove(instructions);
 						frame.remove(buttonSources);
+						JLabel entry = new JLabel("Post-traumatic stress disorder");
+						entry.setFont(new Font("Times New Roman", Font.BOLD, 20));
+						frame.add(entry);
+						entry.setSize(500, 60);
+						entry.setLocation(250, 1);
+						JLabel entry2 = new JLabel("What is PTSD");
+						entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry2);
+						entry2.setSize(400, 60);
+						entry2.setLocation(1, 40);
+						JLabel entry3 = new JLabel("<html>A disorder in which a person has difficulty recovering after experiencing or witnessing a terrifying event.<br/>The condition may last months or years, with triggers that can bring back memories of the trauma,<br/>accompanied by intense emotional and physical reactions. Types of events that can lead to PTSD include:<br/>serious accidents. physical or sexual assault.</html>");
+						entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry3);
+						entry3.setSize(10000, 100);
+						entry3.setLocation(1, 75);
+						JLabel entry4 = new JLabel("Symptoms of PTSD");
+						entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry4);
+						entry4.setSize(10000, 100);
+						entry4.setLocation(1, 145);
+
+						JLabel entry5 = new JLabel("<html>* Inability to Focus.<br/>* Flashbacks.<br/>* Intense Anger.<br/>* Physical Illness.<br/>* Inability to Connect / Isolation and Depression</html>");
+						entry5.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry5);
+						entry5.setSize(1000, 100);
+						entry5.setLocation(1,210);
+						
+
+						JLabel entry6 = new JLabel("<html>How can you help a person with PTSD:<br/><br/>* Be Supportive.<br/>* Be Patient (Don't Pressure Them).<br/>* Don't Judge.<br/>* Show Respect.<br/>* Learn About Their Triggers. <br/>* Encourage Them to Seek Treatment.</html>");
+						entry6.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry6);
+						entry6.setSize(1000, 200);
+						entry6.setLocation(1,300);
+			
+
+						JLabel entry7 = new JLabel(" ");
+						entry7.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry7);
+						entry7.setSize(10000, 100);
+						entry7.setLocation(1, 500);
 						buttonOne.setText("Back");
 						
 						buttonOne.addMouseListener(new MouseListener(){
@@ -99,6 +139,13 @@ public class HackApp {
 
 							@Override
 							public void mousePressed(MouseEvent e) {
+								frame.remove(entry);
+								frame.remove(entry2);
+								frame.remove(entry3);
+								frame.remove(entry4);
+								frame.remove(entry5);
+								frame.remove(entry6);
+								frame.remove(entry7);
 								frame.repaint();
 								
 							}
@@ -159,14 +206,14 @@ public class HackApp {
 						entry3.setSize(10000, 100);
 						entry3.setLocation(1, 75);
 						JLabel entry4 = new JLabel(
-								"<html>There are three subtypes of ADHD.<br/>* Predominantly inattentive: The majority of symptoms fall under inattention.<br/>* Predominantly hyperactive/impulsive. The majority of symptoms are hyperactive and impulsive.<br/>* Combined. This is a mix of inattentive symptoms and hyperactive/impulsive symptoms.</html>");
+								"<html>There are three subtypes of ADHD.<br/><br/>* Predominantly inattentive. The majority of symptoms fall under inattention.<br/>* Predominantly hyperactive/impulsive. The majority of symptoms are hyperactive and impulsive.<br/>* Combined. This is a mix of inattentive symptoms and hyperactive/impulsive symptoms.</html>");
 						entry4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry4);
 						entry4.setSize(10000, 100);
 						entry4.setLocation(1, 200);
 
 						JLabel entry5 = new JLabel(
-								"<html>How do you help people with ADHD.<br/>* Understand the potential impairments of ADHD.<br/>* Acknowledge the impact ADHD has on you.<br/>* Assess your loved one’s readiness to change.<br/>* Know the best treatments for ADHD</html>");
+								"<html>How do you help people with ADHD.<br/><br/>* Understand the potential impairments of ADHD.<br/>* Acknowledge the impact ADHD has on you.<br/>* Assess your loved one’s readiness to change.<br/>* Know the best treatments for ADHD</html>");
 						entry5.setFont(new Font("Times New Roman", Font.BOLD, 15));
 						frame.add(entry5);
 						entry5.setSize(10000, 100);
@@ -196,6 +243,8 @@ public class HackApp {
 								frame.remove(entry5);
 								frame.remove(entry6);
 								frame.repaint();
+								
+							
 								
 							}
 
@@ -336,12 +385,26 @@ public class HackApp {
 						frame.remove(instructions);
 						frame.remove(buttonSources);
 
-						JLabel entry6 = new JLabel(
-								"<html>Source for ADHD: https://www.healthline.com/health/adhd/dating-someone-with-adhd<br/>https://www.mayoclinic.org/diseases-conditions/adhd/symptoms-causes/<html>");
-						entry6.setFont(new Font("Times New Roman", Font.BOLD, 15));
-						frame.add(entry6);
-						entry6.setSize(10000, 100);
-						entry6.setLocation(1, 100);
+						JLabel entry = new JLabel("<html>Source for ADHD: https://www.healthline.com/health/adhd/dating-someone-with-adhd<br/>https://www.mayoclinic.org/diseases-conditions/adhd/symptoms-causes/<html>");
+						entry.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry);
+						entry.setSize(10000, 100);
+						entry.setLocation(1, 100);
+						
+						JLabel entry2 = new JLabel("<html>Source for Autism: https://www.autismspeaks.org/what-autism<br/>https://www.helpguide.org/articles/autism-learning-disabilities/<html>");
+						entry2.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry2);
+						entry2.setSize(10000, 100);
+						entry2.setLocation(1, 175);
+						
+						JLabel entry3 = new JLabel("<html>Source for PTSD: https://www.psychiatry.org/patients-families/ptsd/what-is-ptsd<br/>https://www.therecoveryvillage.com/mental-health/ptsd/<html>");
+						entry3.setFont(new Font("Times New Roman", Font.BOLD, 15));
+						frame.add(entry3);
+						entry3.setSize(10000, 100);
+						entry3.setLocation(1, 275);
+						
+						
+						
 						buttonOne.setText("Back");
 						
 						
@@ -352,8 +415,10 @@ public class HackApp {
 
 							@Override
 							public void mousePressed(MouseEvent e) {
-								
-								
+								frame.remove(entry);
+								frame.remove(entry2);
+								frame.remove(entry3);
+								frame.repaint();
 								
 							
 						
