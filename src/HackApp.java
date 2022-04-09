@@ -93,6 +93,7 @@ public class HackApp {
 							frame.remove(buttonadhd);
 							frame.remove(buttonThree);
 							frame.remove(buttonptsd);
+							buttonOne.setText("Back");
 								frame.repaint();
 							
 						}
@@ -131,6 +132,7 @@ public class HackApp {
 								frame.remove(buttonadhd);
 								frame.remove(buttonThree);
 								frame.remove(buttonptsd);
+								buttonOne.setText("Back");
 								frame.repaint();
 							
 						}
@@ -169,6 +171,7 @@ public class HackApp {
 							frame.remove(buttonadhd);
 							frame.remove(buttonThree);
 							frame.remove(buttonptsd);
+							buttonOne.setText("Back");
 								frame.repaint();
 							
 						}
